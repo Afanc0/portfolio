@@ -1,41 +1,50 @@
-import Image from "next/image";
+import Image from "next/image"
+import data from "@afanco/data/about.json"
+
+import { ArrowUpRight, Download } from "lucide-react";
 
 export const HeroBanner = () => {
     return (
-        <section className="flex flex-row min-w-full">
-            <div className="flex-1">
-                <div className="flex flex-col gap-8 min-h-full justify-center">
+        <section className="flex flex-col-reverse md:flex-row w-full max-w-7xl mx-auto px-6 py-16 gap-12 items-center">
+            <div className="flex-1 w-full">
+                <div className="flex flex-col gap-8 justify-center">
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-7xl font-light">I&apos;m Gianfranco</h1>
-                        <span className="text-5xl font-light">Designer.</span>
-                        <span className="text-5xl font-light">Engineer.</span>
-                        <span className="text-5xl font-light">Builder.</span>
+                        <h1 className="text-5xl md:text-7xl font-light leading-tight">I&apos;m Gianfranco</h1>
+                        <span className="text-3xl md:text-5xl font-light">Designer.</span>
+                        <span className="text-3xl md:text-5xl font-light">Engineer.</span>
+                        <span className="text-3xl md:text-5xl font-light">Builder.</span>
                     </div>
-                    <p>
-                    Crafting digital experiences that bridge creativity and technology.  
-                    Specialized in modern web development and user-centered design.      
-                    </p>
-                    <div className="flex flex-row gap-8 py-3">
-                        <button className="bg-white rounded-full py-2 px-9">
-                            <span className="text-black text-sm font-light">View Work</span>
-                        </button>
-                        <button className="rounded-full py-2 px-9 border border-white">
-                            <span className="text-white text-sm font-light">Resume</span>
-                        </button>
+                    <p className="text-base md:text-lg text-gray-300 max-w-xl">{data.intro}</p>
+                    <div className="flex flex-row gap-6 pt-4">
+                        <a href="#portfolio">
+                            <button className="bg-white text-black text-sm font-light py-2 px-6 md:px-9 rounded-full transition hover:bg-gray-200 cursor-pointer">
+                                <div className="flex justify-center items-center flex-row gap-1  py-1">
+                                    View Work
+                                    <ArrowUpRight className="w-4 h-4" />
+                                </div>
+                            </button>
+                        </a>
+                        <a href="/gian_resume_2025_5.pdf" download="gian_romani_resume.pdf">
+                            <button className="border border-white text-white text-sm font-light py-2 px-6 md:px-9 rounded-full transition hover:bg-white hover:text-black cursor-pointer">
+                                <div className="flex justify-center items-center flex-row gap-1  py-1">
+                                    Resume
+                                    <Download className="w-4 h-4" />
+                                </div>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div className="flex-1">
-                <div className="flex justify-end items-center">
-                    <Image
-                    className="rounded-2xl"
+            <div className="flex-1 w-full flex justify-center md:justify-end">
+                <Image
+                    className="rounded-2xl object-cover"
                     src="/me.jpg"
                     alt="Portrait of Gianfranco"
                     width={450}
                     height={500}
-                    />
-                </div>
+                    priority
+                />
             </div>
         </section>
-    )
-}
+    );
+};

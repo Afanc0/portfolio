@@ -1,0 +1,50 @@
+[
+    {
+        "title": "E-commerce Web App",
+        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "category": "Web Development",
+        "location": "Independent Project",
+        "skills": ["React", "TypeScript"],
+        "image": "/ecommerce.png"
+    },
+    {
+        "title": "Editing Software",
+        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "category": "Software Development",
+        "location": "Independent Project",
+        "skills": ["React", "TypeScript", "Rust"],
+        "image": "/editing.png"
+    },
+    {
+        "title": "Mongo DataVisualizer",
+        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "category": "Software Development",
+        "location": "Independent Project",
+        "skills": ["React", "TypeScript", "MongoDB", "Rust"],
+        "image": "/mongo.png"
+    },
+    {
+        "title": "Real Formation",
+        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "category": "Web Development",
+        "location": "New York City - United States",
+        "skills": ["WordPress", "Elementor", "JavaScript"],
+        "image": "/real.png"
+    },
+    {
+        "title": "Food Finder",
+        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "category": "Web Development",
+        "location": "Independent Project",
+        "skills": ["React", "Python", "TypeScript", "MongoDB"],
+        "image": "/food.png"
+    },
+    {
+        "title": "Asociación De Exalumnos Ugartinos",
+        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "category": "Web Development",
+        "location": "Lima - Peru",
+        "skills": ["WordPress", "Elementor", "JavaScript"],
+        "image": "/asoc.png"
+    }
+]

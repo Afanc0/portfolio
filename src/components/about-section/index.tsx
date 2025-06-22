@@ -1,34 +1,28 @@
 import Image from "next/image";
+import { Section } from "../section";
+import data from "@afanco/data/about.json"
 
 export const AboutSection = () => {
     return (
-        <section id="about" className="py-12 flex flex-col gap-12">
-            <h2 className="text-5xl font-light">
-                About
-            </h2>
-            <div className="flex flex-row gap-12">
-                <p className="flex-1">
-                    I&apos;m a passionate creator who bridges the gap between design and technology. 
-                    With over 5 years of experience in digital product development, 
-                    I specialize in crafting exceptional user experiences. 
-                </p>
-                <p className="flex-1">
-                    When I&apos;m not coding or designing, you can find me exploring new  technologies, 
-                    contributing to open-source projects, or sharing knowledge with the developer community.
-                </p>
+        <Section name="About" id="about" className="flex flex-col p-3 gap-3">
+            <div className="flex flex-row gap-12 p-3">
+                <p className="flex-1">{data.p1}</p>
+                <p className="flex-1">{data.p2}</p>
             </div>
-            <div className="flex flex-row gap-12">
-                <p className="flex-1">
-                    I&apos;m a passionate creator who bridges the gap between design and technology. 
-                    With over 5 years of experience in digital product development, 
-                    I specialize in crafting exceptional user experiences. 
-                </p>
+            <div className="flex flex-row gap-12 p-3">
+                <p className="flex-1">{data.p3}</p>
                 <div className="flex-1 flex flex-row gap-6">
-                    <Image src="/github.svg" alt="GitHub logo" width={28} height={28} />
-                    <Image src="/linkedin.svg" alt="LinkedIn logo" width={28} height={28} />
-                    <Image src="/mail.svg" alt="Mail logo" width={28} height={28} />
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Afanc0">
+                        <Image src="/github.svg" alt="GitHub logo" width={28} height={28} />
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gianromani/">
+                        <Image src="/linkedin.svg" alt="LinkedIn logo" width={28} height={28} />
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="mailto:gianromani.gr@gmail.com">
+                        <Image src="/mail.svg" alt="Mail logo" width={28} height={28} />
+                    </a>
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }

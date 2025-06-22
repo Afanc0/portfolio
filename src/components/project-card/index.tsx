@@ -1,33 +1,46 @@
 import { SkillCard } from "../skill-card"
 import Image from "next/image";
 
-export const ProjectCard = () => {
+type Project = {
+    title: string;
+    summary: string;
+    category: string;
+    location: string;
+    skills: string[];
+    image:  string;
+}
+
+interface ProjectCardProp {
+    project: Project;
+}
+
+export const ProjectCard = ({project}: ProjectCardProp) => {
     return (
         <div className="w-auto bg-[#1E1E1E] rounded-xl">
             <Image 
-                src="/ecommerce.png" 
-                className="rounded-t-xl w-full"
+                src={project.image} 
+                className="rounded-t-xl w-full h-[414.06px]"
                 alt="site image" 
                 width={656} 
                 height={400} 
             />
             <div className="flex flex-col justify-center gap-3 px-3 py-5">
-                <div className="w-42">
-                    <SkillCard label="Web Development" />
+                <div className="w-fit">
+                    <SkillCard label={project.category} />
                 </div>
                 <span className="text-4xl font-light">
-                    Real Formation
+                    {project.title}
                 </span>
                 <span className="text-base font-light">
-                    Modern e-commerce solution with advanced filtering and seamless checkout experience
+                    {project.summary}
                 </span>
                 <span className="text-base font-normal">
-                    New York City - United States
+                    {project.location}
                 </span>
                 <div className="flex gap-3 min-w-full flex-wrap">
-                    <SkillCard label="WordPress" />
-                    <SkillCard label="Elementor" />
-                    <SkillCard label="JavaScript" />
+                    {project.skills.map((val, skillKey) => (
+                        <SkillCard label={val} key={skillKey} />
+                    ))}
                 </div>
             </div>
         </div>

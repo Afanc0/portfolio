@@ -1,26 +1,17 @@
 import { ProjectCard } from "../project-card"
-
+import { Section } from "../section"
+import data from "@afanco/data/projects.json"
 
 export const Portfolio = () => {
     return (
-        <section id="portfolio">
-            <div className=" flex flex-col py-12 gap-12">
-                <h2 className="text-5xl font-light">Portfolio</h2>
-                <div className="flex flex-wrap gap-8">
-                    <div className="w-full sm:w-[48%]">
-                        <ProjectCard />
+        <Section id="portfolio" name="Portfolio" className="p-3">
+            <div className="flex flex-wrap gap-8 p-3">
+                {data.map((val, key) => (
+                    <div className="w-full sm:w-[48%]" key={key}>
+                        <ProjectCard project={val} />
                     </div>
-                    <div className="w-full sm:w-[48%]">
-                        <ProjectCard />
-                    </div>
-                    <div className="w-full sm:w-[48%]">
-                        <ProjectCard />
-                    </div>
-                    <div className="w-full sm:w-[48%]">
-                        <ProjectCard />
-                    </div>
-                </div>
+                ))}
             </div>
-        </section>
+        </Section>
     )
 }

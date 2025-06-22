@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Software Engineer Intern",
+        "time": "March 2024 - May 2025",
+        "company": "Sub360",
+        "summary": "Built type-safe UI, designed gRPC APIs, and maintained a scalable Pub/Sub pipeline to enhance CRM performance, reliability, and efficiency",
+        "skills": ["React", "TypeScript", "Next.js", "GraphQL"]
+    },
+    {
+        "title": "System Adminstrator",
+        "time": "March 2023 - September 2023",
+        "company": "New York University",
+        "summary": "Maintained lecture capture server and resolved network, VPN, and device issues to ensure reliable access to academic systems across campus",
+        "skills": ["Networking", "Server Maintenance", "Troubleshooting", "System Monitoring"]
+    }
+]
