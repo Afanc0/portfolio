@@ -1,6 +1,8 @@
 import Image from "next/image"
 import data from "@afanco/data/about.json"
 
+import Link from "next/link"
+
 import { ArrowUpRight, Download } from "lucide-react";
 
 export const HeroBanner = () => {
@@ -19,22 +21,22 @@ export const HeroBanner = () => {
                     <p className="text-base md:text-lg hidden sm:flex text-gray-300 max-w-xl">{data.intro}</p>
 
                     <div className="flex flex-row justify-center sm:justify-normal gap-4 pt-4">
-                        <a href="#portfolio">
+                        <Link href="#portfolio">
                             <button className="bg-white text-black text-sm font-light py-2 px-6 md:px-9 rounded-full transition hover:bg-gray-200 cursor-pointer">
                                 <div className="flex justify-center items-center flex-row gap-1  py-1">
                                     View Work
                                     <ArrowUpRight className="w-4 h-4" />
                                 </div>
                             </button>
-                        </a>
-                        <a href="/gian_resume_2025_5.pdf" download="gian_romani_resume.pdf">
+                        </Link>
+                        <Link href="/gian_resume_2025_5.pdf" download="gian_romani_resume.pdf">
                             <button className="border border-white text-white text-sm font-light py-2 px-6 md:px-9 rounded-full transition hover:bg-white hover:text-black cursor-pointer">
                                 <div className="flex justify-center items-center flex-row gap-1  py-1">
                                     Resume
                                     <Download className="w-4 h-4" />
                                 </div>
                             </button>
-                        </a>
+                        </Link>
                     </div>
                     
                 </div>

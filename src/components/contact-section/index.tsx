@@ -1,20 +1,22 @@
-import Image from "next/image";
+
 import { Section } from "../section";
+
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const ContactSection = () => {
     return (
-        <Section id="contact" name="Contact" className="flex flex-col p-3 gap-3">
-            <div className="flex flex-row gap-3 p-3 items-center">
-                <Image src="/mail.svg" alt="Mail logo" width={28} height={28} />
-                <span>gianromani.gr@gmail.com</span>
+        <Section id="contact" name="Contact" className="flex flex-col py-3 sm:p-3 gap-3">
+            <div className="flex flex-row gap-3 py-3 sm:p-3 items-center">
+                <Github className="w-7 h-7" />
+                <span>https://github.com/Afanc0</span>
             </div>
-            <div className="flex flex-row gap-3 p-3 items-center">
-                <Image src="/linkedin.svg" alt="LinkedIn logo" width={28} height={28} />
+            <div className="flex flex-row gap-3 py-3 sm:p-3 items-center">
+                <Linkedin className="w-7 h-7" />
                 <span>https://www.linkedin.com/in/gianromani/</span>
             </div>
-            <div className="flex flex-row gap-3 p-3 items-center">
-                <Image src="/github.svg" alt="GitHub logo" width={28} height={28} />
-                <span>https://github.com/Afanc0</span>
+            <div className="flex flex-row gap-3 py-3 sm:p-3 items-center">
+                <Mail className="w-7 h-7" />
+                <span>gianromani.gr@gmail.com</span>
             </div>
         </Section>
     )

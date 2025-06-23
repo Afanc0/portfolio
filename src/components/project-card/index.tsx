@@ -19,7 +19,7 @@ export const ProjectCard = ({project}: ProjectCardProp) => {
         <div className="bg-[#1E1E1E] rounded-xl w-[600px]">
             <Image 
                 src={project.image} 
-                className="rounded-t-xl w-full h-[300px]"
+                className="rounded-t-xl w-full h-[200px] sm:h-[300px]"
                 alt="site image" 
                 width={656} 
                 height={300} 
