@@ -29,14 +29,14 @@ export const HeroBanner = () => {
                                 </div>
                             </button>
                         </Link>
-                        <Link href="/gian_resume_2025_5.pdf" download="gian_romani_resume.pdf">
+                        {/* <Link href="/gian_resume_2025_5.pdf" download="gian_romani_resume.pdf">
                             <button className="border border-white text-white text-sm font-light py-2 px-6 md:px-9 rounded-full transition hover:bg-white hover:text-black cursor-pointer">
                                 <div className="flex justify-center items-center flex-row gap-1  py-1">
                                     Resume
                                     <Download className="w-4 h-4" />
                                 </div>
                             </button>
-                        </Link>
+                        </Link> */}
                     </div>
                     
                 </div>
