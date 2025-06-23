@@ -5,12 +5,11 @@ import data from "@afanco/data/about.json"
 export const AboutSection = () => {
     return (
         <Section name="About" id="about" className="flex flex-col p-3 gap-3">
-            <div className="flex flex-row gap-12 p-3">
+            <div className="flex flex-col gap-12 p-3 lg:flex-row">
                 <p className="flex-1">{data.p1}</p>
                 <p className="flex-1">{data.p2}</p>
             </div>
             <div className="flex flex-row gap-12 p-3">
-                <p className="flex-1">{data.p3}</p>
                 <div className="flex-1 flex flex-row gap-6">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Afanc0">
                         <Image src="/github.svg" alt="GitHub logo" width={28} height={28} />
