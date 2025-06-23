@@ -31,9 +31,6 @@ export const ProjectCard = ({project}: ProjectCardProp) => {
                 <span className="text-4xl font-light">
                     {project.title}
                 </span>
-                <span className="text-base font-light">
-                    {project.summary}
-                </span>
                 <span className="text-base font-normal">
                     {project.location}
                 </span>

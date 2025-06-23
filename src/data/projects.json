@@ -1,7 +1,23 @@
 [
     {
+        "title": "Real Formation",
+        "summary": "Comprehensive website introducing an upcoming app designed to transform religious education, featuring in-depth overviews of its mission, tools, and innovative approach to delivering catechism materials",
+        "category": "Web Development",
+        "location": "New York City - United States",
+        "skills": ["WordPress", "Elementor", "JavaScript"],
+        "image": "/real.png"
+    },
+    {
+        "title": "Asociación De Exalumnos Ugartinos",
+        "summary": "Dynamic informational platform for an alumni organization to share announcements, host events, and provide valuable academic, financial, and matriculation resources for members and future students",
+        "category": "Web Development",
+        "location": "Lima - Peru",
+        "skills": ["WordPress", "Elementor", "JavaScript"],
+        "image": "/asoc.png"
+    },
+    {
         "title": "E-commerce Web App",
-        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "summary": "Sleek and responsive e-commerce platform featuring advanced product filtering, smooth user experience, and a streamlined checkout process",
         "category": "Web Development",
         "location": "Independent Project",
         "skills": ["React", "TypeScript"],
@@ -9,7 +25,7 @@
     },
     {
         "title": "Editing Software",
-        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "summary": "Lightweight, high-performance editing software built with Tauri, offering fast media processing, intuitive UI, and cross-platform support for seamless content creation",
         "category": "Software Development",
         "location": "Independent Project",
         "skills": ["React", "TypeScript", "Rust"],
@@ -17,34 +33,18 @@
     },
     {
         "title": "Mongo DataVisualizer",
-        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "summary": "Built an intuitive UI for MongoDB CRUD operations with drag-and-drop field editing, visual query building, and data import/export support",
         "category": "Software Development",
         "location": "Independent Project",
         "skills": ["React", "TypeScript", "MongoDB", "Rust"],
         "image": "/mongo.png"
     },
     {
-        "title": "Real Formation",
-        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
-        "category": "Web Development",
-        "location": "New York City - United States",
-        "skills": ["WordPress", "Elementor", "JavaScript"],
-        "image": "/real.png"
-    },
-    {
         "title": "Food Finder",
-        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
+        "summary": "Interactive web app that helps users discover local restaurants nearby and allows businesses to create and manage their own listings with ease",
         "category": "Web Development",
         "location": "Independent Project",
         "skills": ["React", "Python", "TypeScript", "MongoDB"],
         "image": "/food.png"
-    },
-    {
-        "title": "Asociación De Exalumnos Ugartinos",
-        "summary": "Modern e-commerce solution with advanced filtering and seamless checkout experience",
-        "category": "Web Development",
-        "location": "Lima - Peru",
-        "skills": ["WordPress", "Elementor", "JavaScript"],
-        "image": "/asoc.png"
     }
 ]
