@@ -16,13 +16,13 @@ interface ProjectCardProp {
 
 export const ProjectCard = ({project}: ProjectCardProp) => {
     return (
-        <div className="w-auto bg-[#1E1E1E] rounded-xl">
+        <div className="bg-[#1E1E1E] rounded-xl w-[600px]">
             <Image 
                 src={project.image} 
-                className="rounded-t-xl w-full h-[414.06px]"
+                className="rounded-t-xl w-full h-[300px]"
                 alt="site image" 
                 width={656} 
-                height={400} 
+                height={300} 
             />
             <div className="flex flex-col justify-center gap-3 px-3 py-5">
                 <div className="w-fit">
