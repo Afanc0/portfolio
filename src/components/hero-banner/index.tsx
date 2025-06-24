@@ -3,7 +3,7 @@ import data from "@afanco/data/about.json"
 
 import Link from "next/link"
 
-import { ArrowUpRight, Download } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export const HeroBanner = () => {
     return (
@@ -29,16 +29,7 @@ export const HeroBanner = () => {
                                 </div>
                             </button>
                         </Link>
-                        {/* <Link href="/gian_resume_2025_5.pdf" download="gian_romani_resume.pdf">
-                            <button className="border border-white text-white text-sm font-light py-2 px-6 md:px-9 rounded-full transition hover:bg-white hover:text-black cursor-pointer">
-                                <div className="flex justify-center items-center flex-row gap-1  py-1">
-                                    Resume
-                                    <Download className="w-4 h-4" />
-                                </div>
-                            </button>
-                        </Link> */}
-                    </div>
-                    
+                    </div> 
                 </div>
             </div>
             <div className="flex-1 w-full flex justify-center md:justify-end">
